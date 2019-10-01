@@ -44,14 +44,14 @@
                     android:id="@+id/goodmorning"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/morning"
                     android:onClick="openInputData"
                     />
                 <ImageView
                     android:id="@+id/goodnight"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/night"
                     android:onClick="openInputData"
                     />
 
@@ -82,9 +82,11 @@
                 android:onClick="openInputData"
                 />
             <ImageView
+                android:id="@+id/bcard2"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_200sdp"
                 android:src="@drawable/bcard1"
+                android:onClick="openInputData"
                 />
             <ImageView
                 android:layout_width="@dimen/_150sdp"
@@ -112,14 +114,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/tcard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/thankyou"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/tcard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/thankyou"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
@@ -142,14 +148,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/gwscard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/getwell"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/gwscard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/getwell"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
@@ -172,14 +182,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/atbcard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/allthebest"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/atbcard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/allthebest"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
@@ -202,14 +216,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/pbucard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/peace"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/pbucard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/peace"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>

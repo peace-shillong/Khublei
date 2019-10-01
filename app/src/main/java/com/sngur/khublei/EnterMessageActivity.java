@@ -20,6 +20,13 @@ public class EnterMessageActivity extends AppCompatActivity {
     Spinner greetSpinner,sizeSpinner,fontSpinner;
     String[] fontSize={"Small","Medium","Large"},fontFace={"Casual","Cursive","Sans","Serif"},greetEng={"Good Morning","Good Night"};
     String[] khasiGreet={"Ka step ba bha","Thiah suk"},garoGreet={"Pringnam","Walnam"},hindiGreet={"शुभ प्रभात","शुभ रात्रि"};
+
+    String[] Birthday={"Sngikha basuk","Garo","Pnar","Hindi","Happy Birthday"};
+    String[] ThankYou={"Khublei","Garo","Pnar","Hindi","Thank You"};
+    String[] GetWell={"Khlang noh","Garo","Pnar","Hindi","Get Well Soon"};
+    String[] AllTheBest={"Sa leh bha","Garo","Pnar","Hindi","All The Best"};
+    String[] Peace={"Jingsuk lem bad phi","Garo","Pnar","Hindi","Peace Be With You"};
+
     String greet="";
     TextView selectGreeting;
     int greetIndex;
@@ -38,6 +45,8 @@ public class EnterMessageActivity extends AppCompatActivity {
         greetSpinner=findViewById(R.id.greeting_spinner);
         sizeSpinner=findViewById(R.id.font_size_spinner);
         fontSpinner=findViewById(R.id.font_family_spinner);
+        fontSpinner.setSelection(2);
+        sizeSpinner.setSelection(1);
         selectGreeting=findViewById(R.id.greeting_select);
 
         selectGreeting.setVisibility(View.GONE);
@@ -45,7 +54,10 @@ public class EnterMessageActivity extends AppCompatActivity {
         {
             selectGreeting.setVisibility(View.VISIBLE);
             greetSpinner.setVisibility(View.VISIBLE);
-
+            if(design.equals("Good Morning"))
+                greetSpinner.setSelection(0);
+            else
+                greetSpinner.setSelection(1);
             ArrayAdapter<String> adapter=new ArrayAdapter(this,android.R.layout.simple_spinner_item,greetEng);
 
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -98,17 +110,61 @@ public class EnterMessageActivity extends AppCompatActivity {
                 case "Garo":
                     greet=garoGreet[greetIndex];
                     break;
-
                 case "Pnar":
                     greet=khasiGreet[greetIndex];
                     break;
-
                 case "Hindi":
                     greet=hindiGreet[greetIndex];
                     break;
 
             }
         }
+        else
+        {
+            switch(language) {
+                case "English":
+                    greetIndex=4;
+                    break;
+                case "Khasi":
+                    greetIndex=0;
+                    break;
+                case "Garo":
+                    greetIndex=1;
+                    break;
+                case "Pnar":
+                    greetIndex=2;
+                    break;
+                case "Hindi":
+                    greetIndex=3;
+                    break;
+            }
+            //Set Greeting based on Card design
+            switch (design)
+            {
+                case "BCard1":
+                case "BCard2":
+                    greet=Birthday[greetIndex];
+                    break;
+                case "TCard1":
+                case "TCard2":
+                    greet=ThankYou[greetIndex];
+                    break;
+                case "GWSCard1":
+                case "GWSCard2":
+                    greet=GetWell[greetIndex];
+                    break;
+                case "ATBCard1":
+                case "ATBCard2":
+                    greet=AllTheBest[greetIndex];
+                    break;
+                case "PBWUCard1":
+                case "PBWUCard2":
+                    greet=Peace[greetIndex];
+                    break;
+            }
+        }
+
+
         if(!personName.getText().toString().equals("")) {
             Intent intent = new Intent(this, GenerateGreetingCard.class);
             intent.putExtra("Language", language);
@@ -125,13 +181,6 @@ public class EnterMessageActivity extends AppCompatActivity {
         {
             Toast.makeText(this,"Enter Your Friend's Name",Toast.LENGTH_SHORT).show();
         }
-        /*switch (i)
-        {
-           case R.id.createView:
-
-               break;
-        }
-        */
 
     }
 

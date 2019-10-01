@@ -64,6 +64,33 @@ public class CardDesignList extends AppCompatActivity {
             case R.id.bcard1:
                 intent.putExtra("Card","BCard1");
                 break;
+            case R.id.bcard2:
+                intent.putExtra("Card","BCard2");
+                break;
+            case R.id.tcard1:
+                intent.putExtra("Card","TCard1");
+                break;
+            case R.id.tcard2:
+                intent.putExtra("Card","TCard2");
+                break;
+            case R.id.atbcard1:
+                intent.putExtra("Card","ATBCard1");
+                break;
+            case R.id.atbcard2:
+                intent.putExtra("Card","ATBCard2");
+                break;
+            case R.id.gwscard1:
+                intent.putExtra("Card","GWSCard1");
+                break;
+            case R.id.gwscard2:
+                intent.putExtra("Card","GWSCard2");
+                break;
+            case R.id.pbucard1:
+                intent.putExtra("Card","PBWUCard1");
+                break;
+            case R.id.pbucard2:
+                intent.putExtra("Card","PBWUCard2");
+                break;
         }
         startActivity(intent);
     }
