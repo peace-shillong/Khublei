@@ -1,17 +1,15 @@
 <resources>
     <string name="app_name">Khublei</string>
-
     <string name="title_activity_about">About</string>
     <string name="know_button">Know More</string>
     <string name="about_content">"\nKhublei\n
 A Khasi word which means to Greet.\n
-It also means Thank You.\n\n
-
+It also means Thank You.\n
 The word is said to be derived from two words\n
 Kyrkhu and Blei which when translated to English means God Bless.\n
 "</string>
-    <string name="info_content">"\nThis is a simple greeting card maker app. It is an ad-free and open source app build as a group project by the students taking Android Development Course, in 2019 with the guidance of \n\nMr. Kitborlang L. Kynshi \n\nand
+    <string name="info_content">"\nThis is a simple greeting card maker app. The Cards generated with this app are saved in your Download folder with filename starting with 'Khublei_image'\nThis is an ad-free and open source app build as a group project by the students taking Android Development Course, in 2019 with the guidance of \n\nMr. Kitborlang L. Kynshi \n\nand
 "</string>
     <string name="credits_content">"Special Thanks to \nSt. Anthony's College, Shillong\nMeghalaya Developers Community\nSngur\nand Baianeh Nongkhlaw for the images.\n"</string>
-    <string name="support_content">"Support us with either a one time donation or a monthly donation and help us continue our activities. Funds will go towards developers to work on awesome features for you!\nWe will also display any message you want in our website.\n To support us, \ncontact Mr. Kyrshanlang R. Dkhar\nemail: dkhar@kyrshan.com"</string>
+    <string name="support_content">"Support us with either a one time donation or a monthly donation and help us continue our activities.\nFunds will go towards developers to work on awesome features for you!\nWe will also display any message you want in our website.\n To support us, get in touch by sending us an email.\nemail: sngurshillong@gmail.com"</string>
 </resources>

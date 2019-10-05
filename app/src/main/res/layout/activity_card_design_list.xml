@@ -44,14 +44,14 @@
                     android:id="@+id/goodmorning"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/morning"
                     android:onClick="openInputData"
                     />
                 <ImageView
                     android:id="@+id/goodnight"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/night"
                     android:onClick="openInputData"
                     />
 
@@ -82,16 +82,12 @@
                 android:onClick="openInputData"
                 />
             <ImageView
+                android:id="@+id/bcard2"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_200sdp"
-                android:src="@drawable/bcard1"
+                android:src="@drawable/bcard2"
+                android:onClick="openInputData"
                 />
-            <ImageView
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_200sdp"
-                android:src="@drawable/bcard1"
-                />
-
         </LinearLayout>
         </HorizontalScrollView>
 
@@ -112,14 +108,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/tcard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/thankyou"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/tcard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/tcard2"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
@@ -142,14 +142,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/gwscard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/getwell"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/gwscard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/gcard2"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
@@ -172,14 +176,18 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/atbcard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/allthebest"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/atbcard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/acard2"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
@@ -202,194 +210,209 @@
                 android:scrollX="@dimen/_5sdp"
                 android:padding="@dimen/_5sdp">
                 <ImageView
+                    android:id="@+id/pbucard1"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/peace"
+                    android:onClick="openInputData"
                     />
                 <ImageView
+                    android:id="@+id/pbucard2"
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
+                    android:src="@drawable/pcard2"
+                    android:onClick="openInputData"
                     />
 
             </LinearLayout>
         </HorizontalScrollView>
-
-        <!--
-        <TextView
-            android:gravity="center_horizontal"
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Best Wishes Card"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollX="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp">
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="View greeting cards that you have generated"/>
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="View Generated Cards"
+             android:onClick="openSDCard"/>
 
-            </LinearLayout>
-        </HorizontalScrollView>
+         <TextView
+             android:gravity="center_horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Best Wishes Card"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+         <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:scrollX="@dimen/_5sdp"
+                 android:padding="@dimen/_5sdp">
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
 
-        <TextView
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Congratulations Card"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollX="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp">
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
+             </LinearLayout>
+         </HorizontalScrollView>
 
-            </LinearLayout>
-        </HorizontalScrollView>
+         <TextView
+             android:gravity="center_horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Congratulations Card"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+         <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:scrollX="@dimen/_5sdp"
+                 android:padding="@dimen/_5sdp">
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
 
-        <TextView
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Happy Anniversary Card"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollX="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp">
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
+             </LinearLayout>
+         </HorizontalScrollView>
 
-            </LinearLayout>
-        </HorizontalScrollView>
+         <TextView
+             android:gravity="center_horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Happy Anniversary Card"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+         <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:scrollX="@dimen/_5sdp"
+                 android:padding="@dimen/_5sdp">
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
 
-        <TextView
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Christmas Card"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollX="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp">
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
+             </LinearLayout>
+         </HorizontalScrollView>
 
-            </LinearLayout>
-        </HorizontalScrollView>
+         <TextView
+             android:gravity="center_horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Christmas Card"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+         <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:scrollX="@dimen/_5sdp"
+                 android:padding="@dimen/_5sdp">
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
 
-        <TextView
-            android:gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Year Card"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollX="@dimen/_5sdp"
-                android:padding="@dimen/_5sdp">
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
-                <ImageView
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:src="@drawable/bcard1"
-                    />
+             </LinearLayout>
+         </HorizontalScrollView>
 
-            </LinearLayout>
-        </HorizontalScrollView>
-        -->
+         <TextView
+             android:gravity="center_horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="New Year Card"
+             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+         <HorizontalScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:scrollX="@dimen/_5sdp"
+                 android:padding="@dimen/_5sdp">
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+                 <ImageView
+                     android:layout_width="@dimen/_150sdp"
+                     android:layout_height="@dimen/_200sdp"
+                     android:src="@drawable/bcard1"
+                     />
+
+             </LinearLayout>
+         </HorizontalScrollView>
+         -->
     </LinearLayout>
 </ScrollView>

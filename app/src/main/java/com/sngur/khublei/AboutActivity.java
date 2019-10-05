@@ -7,10 +7,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
 public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +19,12 @@ public class AboutActivity extends AppCompatActivity {
     public void openGithub(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("https://github.com/sngur/Khublei"));
+        startActivity(intent);
+    }
+
+    public void openLink(View view) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://kyrshan.com"));
         startActivity(intent);
     }
 
