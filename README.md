@@ -1,6 +1,10 @@
+![logo](https://github.com/peace-shillong/Khublei/blob/master/app/src/main/res/mipmap-hdpi/ic_launcher.png "Khublei App Logo") 
 # Khublei App
 
 A Simple Card Making App
+
+## Get it on Google Play
+[Google Play Link](https://play.google.com/store/apps/details?id=com.sngur.khublei )
 
 # Khublei
 
