@@ -3,13 +3,14 @@
 
 A Simple Card Making App
 
+![screen](https://github.com/sngur/Khublei/blob/master/1.jpg "Khublei App") 
+
 ## Get it on Google Play
 [Google Play Link](https://play.google.com/store/apps/details?id=com.sngur.khublei )
 
 # Khublei
 
-A Khasi word which means to Greet. It also means Thank You. The word is said to be derived from two words\n
-Kyrkhu and Blei which when translated to English means God Bless.
+A Khasi word which means to Greet. It also means Thank You. The word is said to be derived from two words, Kyrkhu and Blei which when translated to English means God Bless.
 
 # About 
 
