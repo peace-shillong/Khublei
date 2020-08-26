@@ -74,6 +74,9 @@
         android:background="@drawable/round_square_2"
         android:textColor="@android:color/white"
         android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:onClick="openAbout"/></LinearLayout>
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:onClick="openAbout"/>
+</LinearLayout>
 </ScrollView>

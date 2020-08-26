@@ -55,7 +55,8 @@
         android:textColor="#222"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:text="Mr. Kyrshanlang R. Dkhar."/>
+        android:text="Mr. Kyrshanlang R. Dkhar."
+        android:onClick="openLink"/>
     </LinearLayout>
     <ImageView
         android:layout_width="match_parent"
