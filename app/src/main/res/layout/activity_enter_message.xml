@@ -23,7 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         />
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -37,9 +37,9 @@
                 android:layout_margin="@dimen/_5sdp"
                 android:visibility="gone"
                 android:textSize="@dimen/_16sdp" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
@@ -51,7 +51,7 @@
                 android:inputType="textPersonName"
                 android:layout_margin="@dimen/_5sdp"
                 android:textSize="@dimen/_16sdp" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
             android:text="NEXT"
             android:layout_margin="@dimen/_5sdp"
             android:layout_gravity="bottom"
-            android:background="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
             android:textColor="@android:color/white"
             android:onClick="generateNewCard"/>
     </LinearLayout>

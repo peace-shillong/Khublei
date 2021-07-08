@@ -6,8 +6,9 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Environment;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
