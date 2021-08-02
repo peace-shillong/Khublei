@@ -1,9 +1,11 @@
 package com.sngur.khublei;
 
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Environment;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -203,14 +205,21 @@ public class GenerateGreetingCard extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
-                // TODO Auto-generated method stub
                 //save and share image
                 Toast.makeText(GenerateGreetingCard.this, "Preparing to share Greeting Card", Toast.LENGTH_SHORT).show();
                 myView.setDrawingCacheEnabled(true);
                 Bitmap b = myView.getDrawingCache();
                 try {
                     //Create File and compress it
-                    File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Khublei_image_"+ Calendar.getInstance().getTime()+".jpg");
+//                    File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Khublei_image_"+ Calendar.getInstance().getTime()+".jpg");
+                    File file = null;
+                    if(Build.VERSION.SDK_INT<10)
+                        file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "greetings_"+ Calendar.getInstance().getTime()+".jpg");
+                    else {
+                        ContextWrapper contextWrapper = new ContextWrapper(GenerateGreetingCard.this);
+                        file = new File(contextWrapper.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "greetings_"+ Calendar.getInstance().getTime()+".jpg");
+                    }
+
                     FileOutputStream stream = new FileOutputStream(file);
                     b.compress(Bitmap.CompressFormat.JPEG, 100, stream);
                     stream.flush();
